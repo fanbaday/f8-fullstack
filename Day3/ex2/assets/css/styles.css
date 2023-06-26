@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 40px;
+}
+
+header{
+    text-align: center;
+    border-bottom: 2px solid slateblue;
+    margin-bottom: 60px;
+}
+
+.user{
+    display: flex;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 50px;
+    row-gap: 20px;
+}
+
+.user__avatar{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.user .user__avatar img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.user__comment p + p {
+    font-weight: 700;
+    margin-top: 10px;
+}

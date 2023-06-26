@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, sans-serif;
+}
+body{
+    padding: 50px;
+}
+
+.form__container{
+    display: flex;
+    justify-content: space-between;
+}
+.form__info p i{
+    font-size: 25px;
+    margin-right: 15px;
+}
+.form__info p {
+    margin-top: 25px;
+    opacity: 0.5;
+}
+.form__info{
+    padding-top: 25px;
+}
+
+.form__booking{
+    margin-top: 25px;
+}
+.form__booking form input, .form__booking form textarea{
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.form__booking form{
+    margin-top: 25px;
+}
+form button {
+    color: white;
+    background-color: darkcyan;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}

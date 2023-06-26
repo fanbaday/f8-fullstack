@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 50px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    color: black;
+    padding: 10px 25px;
+}
+nav ul{
+    border: 1px solid black;
+    width: 545px
+}
+section{
+    margin-top: 50px;
+    display: flex;
+}
+.map__location {
+    padding: 50px;
+    background-color: bisque;
+}
+.map__location h2, .map__location p{
+    margin-bottom: 20px;
+}
+
+nav ul li:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

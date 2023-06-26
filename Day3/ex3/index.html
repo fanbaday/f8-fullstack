@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    <label for="">User name:</label></td>
+                <td>
+                    <input type="text" name="name">
+                </td>                        
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Pass word:</label>
+                <td>
+                    <input type="password" name="password">
+                </td>                        
+            </tr>
+            <tr>
+                <td>
+                    <label for="">City of Employment:</label>
+                <td>
+                    <input type="text" name="name">
+                </td>                        
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Web server:</label>
+                </td>
+                <td>
+                    <select name="server" id="server">
+                        <option value="0">-Choose a server-</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Please specify your role:</label>
+                </td>
+                <td >
+                    <label>
+                        <input type="radio" name="role" value="0">Admin
+                    </label>
+                    <label>
+                        <input type="radio" name="role" value="1">Engineer
+                    </label>
+                    <label>
+                        <input type="radio" name="role" value="2">Manager
+                    </label>
+                    <label>
+                        <input type="radio" name="role" value="3">Guest
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Single Sign-on to the following:</label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="sign" value="0">Mail
+                    </label>
+                    <label>
+                        <input type="checkbox" name="sign" value="1">Payroll
+                    </label>
+                    <label>
+                        <input type="checkbox" name="sign" value="2">Self-service
+                    </label>
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Login</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

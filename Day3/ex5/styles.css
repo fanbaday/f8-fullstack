@@ -1,0 +1,28 @@
+header{
+    text-align: center;
+}
+header p{
+    color: white;
+    background-color: cornflowerblue;
+    padding: 10px 30px;
+    width: 80px;
+    margin: auto;
+    margin-top: 30px;
+}
+section{
+    text-align: center;
+}
+section h1 span{
+    color: dodgerblue;
+}
+section p{
+    margin-bottom: 50px;
+}
+section a {
+    background-color: black;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-right: 15px;
+}
