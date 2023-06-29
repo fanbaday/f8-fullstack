@@ -1,10 +1,3 @@
-p{
-    display: inline-block;
-}
-.info1{
-    margin-bottom: 15px;
-}
-.message{
-    height: 200px;
-    width: 400px;
+.info{
+    margin-bottom: 10px;
 }
