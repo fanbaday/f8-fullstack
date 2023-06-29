@@ -2,45 +2,65 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 html{
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
 }
-body{
-    padding: 50px;
+section{
+    margin: 100px;
 }
-
-.form__container{
+.heading-form{
+    position: relative;
+    font-size: 35px;
+    font-weight: 520;
+}
+.heading-form::before{
+    content: "";
+    width: 65px;
+    height: 3.5px;
+    background-color:rgb(254,188,69);
+    position: absolute;
+    bottom: -13px;
+}
+.form-container{
+    margin-top: 50px;
     display: flex;
-    justify-content: space-between;
+    
 }
-.form__info p i{
+.info-heading{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 520;
+}
+.form-info ul li{
+    list-style-type: none;
+    font-size: 17px;
+    opacity: 0.5;
+    padding: 10px 0px;
+}
+.form-info ul li i{
     font-size: 25px;
     margin-right: 15px;
 }
-.form__info p {
-    margin-top: 25px;
-    opacity: 0.5;
+.form-contact{
+    margin-left: 125px;
+    width: 800px;
 }
-.form__info{
-    padding-top: 25px;
+.contact-heading{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
-
-.form__booking{
-    margin-top: 25px;
-}
-.form__booking form input, .form__booking form textarea{
+.form-contact form input, .form-contact form textarea{
     padding: 10px;
-    margin-bottom: 15px;
     width: 100%;
+    margin-bottom: 15px;
 }
-.form__booking form{
-    margin-top: 25px;
-}
-form button {
+.form-contact form button{
+    padding: 12px 20px;
     color: white;
-    background-color: darkcyan;
-    padding: 10px 15px;
+    background-color: rgb(11,183,181);
     border: none;
     cursor: pointer;
 }

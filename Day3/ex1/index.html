@@ -8,34 +8,62 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-         <h1>Contact us</h1>
-    </header>
     <section>
-        <div class="form__container">
-            <div class="form__info">
-                <h2>Contact Info</h2>
-                <p>
-                    <i class="fa-sharp fa-solid fa-location-dot"></i>
-                    321 Awesome Street New York, NY 17022
-                </p>
-                <p>
-                    <i class="fa-regular fa-envelope"></i>
-                    info@gmail.com
-                </p>
-                <p>
-                    <i class="fa-solid fa-phone"></i>
-                    +84 356996733
-                </p>
+        <p class="heading-form">Contact us</p>
+        <div class="form-container">
+            <div class="form-info">
+                <p class="info-heading">Contact Info</p>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        321 Awesome Street New York, NY 17022
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        Info.gmail.com.vn
+                    </li>
+                    <li> 
+                        <i class="fa-solid fa-phone"></i>
+                        +84 356996733
+                    </li>
+                </ul>
             </div>
-            <div class="form__booking">
-                <h2>Having Any Query! Or Book an appointment</h2>
-                <form action="">
-                    <input type="text" name="name" placeholder="Your Name">
-                    <input type="text" name="email" placeholder="Your Email">
-                    <input type="text" name="subject" placeholder="Subject">
-                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Message"></textarea>
-                    <button type="submit">Send Message</button>
+            <div class="form-contact">
+                <p class="contact-heading">Having any query! Or Book an Appointment</p>
+                <form action="push" method="https://api-gateway.fullstack.edu.vn/action_page.php">
+                    <div>
+                        <input 
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Your name" >
+                    </div>
+                    <div>
+                        <input 
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Your email" >
+                    </div>
+                    <div>
+                        <input 
+                            type="text"
+                            name="subject"
+                            id="subject"
+                            placeholder="Your subject" >
+                    </div>
+                    <div>
+                        <textarea 
+                            name="message" 
+                            id="" 
+                            cols="30" 
+                            rows="10"
+                            placeholder="Message"
+                        ></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Send Message</button>
+                    </div>
                 </form>
             </div>
         </div>
