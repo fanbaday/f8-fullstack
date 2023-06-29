@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+.booking-section{
+    text-align: center;
+    margin: 50px;
+    
+}
+.booking-form__title{
+    font-size: 20px;
+}
+.booking-form__heading{
+    font-size: 45px;
+    font-weight: 900;
+    margin: 30px 0 0 0;
+}
+.booking-form table{
+    margin: auto;
+    margin-top: 20px;
+}
+
+.booking-form input{
+    padding:10px 100px 10px 15px;
+    margin: 8px;
+}
+.booking-form input::placeholder{
+    color: rgb(58,38,23);
+    font-weight: 600;
+}
+.booking-form button{
+    padding: 11px 97px;
+    font-weight: 800;
+    color: white;
+    background-color: rgb(176,51,43); 
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}

@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+}
+.sub-form{
+    width: 800px;
+    height: auto;
+    background-color: rgb(51,68,85);
+    padding: 30px;
+    border-radius: 8px;
+    margin: auto;
+}
+.sub-form__title{
+    font-size: 35px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.sub-form__title span{
+    color: rgb(252,161,30);
+}
+.sub-form__content{
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+input{
+    padding: 10px;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+}
+button{
+    padding: 10px 25px;
+    background-color:rgb(252,161,30) ;
+    border: none;
+    border-radius: 3px;
+}
+.sub-form:hover input::placeholder {
+    color: rgb(252,161,30);
+}
+.sub-form:hover input{
+    background-color: #ddd;
+}
+.sub-form:hover button{
+    color: white;
+    cursor: pointer;
+}
+
