@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+@font-face {
+    font-family: "lobster";
+    src: url(../font/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family: "lato";
+    src: url(../font/Lato-Regular.ttf);
+}
+
+
+body{
+    margin: 100px;
+    width: 500px;
+}
+.form-heading{
+    font-family: "lobster";
+    font-size: 45px;
+    font-weight: 300;
+}
+.form-content{
+    font-size: 17px;
+    font-family: "lato";
+    opacity: 0.5;
+}
+
+.form-content{
+    margin: 20px 0 0 0;
+}
+.form-content span{
+    color: rgb(233,63,50);
+}
+.input i{
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font-size: 23px;
+}
+form .input{
+    display: flex;
+    margin: 15px 0 15px 0;
+    opacity: 0.5;
+    position: relative;
+}
+.sub-icon{
+    position: absolute;
+    right: 13px;
+    top: 19px;
+    font-size: 10px;
+    
+}
+
+form .input:hover{
+    opacity: 1;
+}
+.input input::placeholder{
+    font-size: 15px;
+}
+
+.input input{
+        border: 1px solid black;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+}
+.input:active .input__warn{
+    display: block;
+}
+.input__warn{
+    display: none;
+}
+
+.input__warn p{
+    position: absolute;
+    padding: 14px 19px;
+    background-color: black;
+    color: white;
+    left: 59px;
+    top: -65px;
+    font-family: "lato";
+}
+.input__warn span{
+    position: absolute;
+    left: 104px;
+    top: -29px;
+    width: 0;
+    height: 0;
+    border-color: black transparent transparent transparent;
+    border-width: 22px;
+    border-style: solid;
+}
+.text-area:active .input__warn{
+    display: block;
+}
+
+
+.text-area{
+    display: flex;
+    opacity: 0.5;
+    margin-bottom: 15px;
+    position: relative;
+}
+.text-area .sub-icon-2{
+    position: absolute;
+    right: 13px;
+    top: 19px;
+    font-size: 10px;
+}
+
+.text-area:hover{
+    opacity: 1;
+}
+.text-area i{
+    font-size: 23px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+.text-area textarea::placeholder{
+    font-size: 16px;
+}
+.text-area textarea{
+    width: 100%;
+    padding: 15px;
+}
+.form-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.form-footer__check label{
+    display: flex;
+}
+.form-footer__check label p{
+    font-size: 17px;
+    margin-left: 10px;
+    font-family: "lato";
+    opacity: 0.5;
+}
+
+.form-footer button{
+    padding: 10px 35px;
+    color: white;
+    background-color: rgb(233,63,50);
+    border: none;
+    cursor: pointer;
+}

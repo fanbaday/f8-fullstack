@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+}
+.layout{
+    text-align: center;
+    margin: 30px 50px;
+}
+.heading{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.list-services{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+}
+.service{
+    width: 350px;
+    box-shadow: 1px 5px 5px 1px #888888;
+    padding: 26px;
+}
+.service i{
+    font-size: 45px;
+    padding: 40px;
+    color: rgb(242,169,59);
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid rgb(242,169,59);
+}
+.service .service-heading{
+   margin: 25px;
+}
+.service p{
+    opacity: 0.6;
+}
+.service button{
+    margin-top: 25px;
+    padding: 12px 20px;
+    color: white;
+    background-color: rgb(242,169,59);
+    border: none;
+    cursor: pointer;
+}

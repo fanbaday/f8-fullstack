@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+        font-family: sans-serif;
+    }
+.page{
+    width: 1200px;
+    height: auto;
+}
+.paragh input{
+    display: none;
+}
+.title label{
+    display: flex;
+    padding: 13px;
+    background-color: rgb(216,88,37);
+    color: white;
+    cursor: pointer;
+}
+.title label p{
+    margin-left: 10px;
+}
+.content{
+    display: none;
+    margin: 20px 0 40px 20px;
+}
+.content li {
+    list-style-type: style;;
+}
+
+input:checked ~ .content{
+    display: block;
+}
+.paragh{
+    margin-bottom: 15px ;
+}
+label .close{
+    display: none;
+}
+.paragh input:checked ~ label .close{
+    display: block;
+}
