@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+@font-face {
+    font-family: "manrope";
+    src: url(../font/Manrope-Regular.ttf);
+}
+html{
+    font-family: "manrope";
+}
+body{
+    background-color: rgb(247,247,249);
+}
+#header{
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-img img{
+    width: 175px;
+    height: auto;
+    cursor: pointer;
+}
+.header-nav{
+    display: flex;
+
+    align-items: center;
+}
+.nav-heading{
+    display: flex;
+    margin-right: -19px;
+}
+.nav-heading > li{
+   list-style-type: none;
+    margin-right: 40px;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 32px 0;
+}
+.nav-heading > li i{
+        font-size: 10px;
+    margin-left: 3px;
+}
+.nav-icon i{
+    font-size: 22px;
+    margin-left: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.nav-heading > li:hover{
+    opacity: 0.7;
+}
+.main-nav{
+    position: relative;
+   
+}
+.mega-menu{
+    position: absolute;
+    left: -1593px;
+    margin: 68px 52px;
+    display: flex;
+    padding: 30px;
+    background: white;
+    top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 4px;
+    visibility: hidden;
+    cursor: auto;
+    /* opacity: 1; */
+}
+.main-nav:hover .mega-menu{
+    visibility:inherit
+}
+.menu-flex{
+    display: flex;
+}.mega-menu1{
+    margin-right: 100px;
+    position: relative;
+}
+.mega-menu1::after{
+    content: "";
+    width: 1px;
+    height: 335px;
+    position: absolute;
+    background-color: rgb(241,243,246);
+    top: 0px;
+    right: 30px;
+}
+.main-nav li{
+    list-style-type: none;
+    margin: 8px 0;
+    width:   152px;
+}
+.menu-flex1{
+        margin: 16px 0;
+}
+.menu-flex2{
+    margin: 16px 129px;
+}
+.menu-elements{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-elements__flex{
+    margin-right: 200px;
+}
+.mega-menu li:hover{
+    cursor: pointer;
+    color: rgb(0,0,0);
+}
