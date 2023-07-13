@@ -11,7 +11,7 @@ html{
     background-repeat: no-repeat;
     height: 1230px;
     width: 1920px;
-    margin-left: 280px;
+    /* margin-left: 280px; */
     position: relative;
 }
 .login-form{
