@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+.page {
+  background-color: #31a8f7;
+  height: 100vh;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  position: relative;
+}
+
+.heading {
+  text-align: end;
+  color: white;
+  margin-right: 100px;
+}
+
+.heading h1 {
+  font-size: 60px;
+}
+
+.heading h2 {
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+.heading span {
+  font-size: 40px;
+}
+
+.menu {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  translate: -50% -50%;
+  transition: 0.4s;
+}
+
+.menu-box {
+  position: absolute;
+  left: 17px;
+  top: 16px;
+  width: 50px;
+  height: 50px;
+  /* background: yellow; */
+  cursor: pointer;
+}
+
+.menu-btn {
+  width: 28px;
+  height: 5px;
+  background-color: #31a8f7;
+  position: relative;
+  left: 5px;
+  top: 23px;
+  transition: 0.5s;
+}
+
+.menu-btn::before {
+  content: "";
+  width: 28px;
+  height: 5px;
+  background-color: #31a8f7;
+  position: absolute;
+  left: 0px;
+  top: -9px;
+  transition: 0.5s;
+}
+
+.menu-btn::after {
+  content: "";
+  width: 28px;
+  height: 5px;
+  background-color: #31a8f7;
+  position: absolute;
+  left: 0px;
+  transition: 0.5s;
+  top: 9px;
+}
+
+input:checked ~ .menu {
+  width: 3000px;
+  height: 3000px;
+}
+
+input:checked ~ label .menu-btn {
+  transform: rotate(360deg);
+  border-radius: 5px;
+  width: 30px;
+}
+
+input:checked ~ label .menu-btn::after {
+  width: 20px;
+  height: 5px;
+  background-color: #31a8f7;
+  /* position: absolute; */
+  left: -1px;
+  top: 7px;
+  rotate: 45deg;
+  border-radius: 5px;
+}
+
+input:checked ~ label .menu-btn::before {
+  width: 20px;
+  height: 5px;
+  background-color: #31a8f7;
+  /* position: absolute; */
+  left: -1px;
+  top: -7px;
+  border-radius: 5px;
+  transform: rotate(137deg);
+}
+ul {
+  position: absolute;
+  top: 110px;
+  left: 0px;
+  /* width: 300px; */
+  list-style: none;
+  transition: 0.1s;
+}
+
+li {
+  padding: 15px 0px 15px 0px;
+  cursor: pointer;
+}
+
+li a {
+  color: #31a8f7;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 100px 10px 50px;
+}
+
+ul li a:focus {
+  color: black;
+  background-color: #ccc;
+}
+
+ul {
+  opacity: 0;
+  visibility: hidden;
+}
+
+input:checked ~ ul {
+  opacity: 1;
+  visibility: visible;
+}
